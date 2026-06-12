@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Negara - Proyek Visualisasi Data</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Dashboard Statistik Negara Dunia</h1>
+        <p>Sumber Data: API restcountries.com</p>
+      </header>
+
+      <main class="dashboard">
+        <div class="chart-box">
+          <h2>10 Negara dengan Populasi Terbanyak</h2>
+          <canvas id="populasiChart"></canvas>
+        </div>
+
+        <div class="chart-box">
+          <h2>Distribusi Negara per Benua</h2>
+          <canvas id="benuaChart"></canvas>
+        </div>
+
+        <div class="chart-box">
+          <h2>10 Negara Terluas di Dunia</h2>
+          <canvas id="luasChart"></canvas>
+        </div>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
